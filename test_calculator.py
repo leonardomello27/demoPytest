@@ -31,7 +31,7 @@ class TestCalculator():
     
     def test_subtraction(self):
         #self.calc = Calculator()
-        assert self.calc.subtraction(10, 5) == 5
+        assert self.calc.subtraction(10, 5) == 2
     
     def test_multiplication(self):
         #self.calc = Calculator()

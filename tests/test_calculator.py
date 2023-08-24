@@ -1,9 +1,9 @@
 import pytest
-from calculator import Calculator
+from src.calculator import Calculator
 
 class TestCalculator():
 
-    skipComplexTests = True
+    skipComplexTests = False
 
     def setup_class(self):
         self.calc = Calculator()
@@ -31,7 +31,10 @@ class TestCalculator():
     
     def test_subtraction(self):
         #self.calc = Calculator()
-        assert self.calc.subtraction(10, 5) == 2
+        assert self.calc.subtraction(10, 5) == 5
+    
+    def test_subtraction2(self):
+        assert self.calc.subtraction(5, 10) == -5
     
     def test_multiplication(self):
         #self.calc = Calculator()
